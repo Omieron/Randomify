@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/background_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.CreateActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="321dp"
+        android:layout_height="114dp"
+        android:layout_marginBottom="76dp"
+        android:background="@drawable/title_view"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:text="@string/title_name"
+        android:textAlignment="center"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/mottoTxt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinnerSubject"
+        android:layout_width="309dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="44dp"
+        android:background="@color/material_dynamic_primary95"
+        app:layout_constraintBottom_toTopOf="@+id/btnAdd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="304dp"
+        android:layout_height="68dp"
+        android:layout_marginBottom="68dp"
+        android:background="@drawable/button_view"
+        android:fontFamily="monospace"
+        android:text="@string/create_new_lotto"
+        android:textColor="#EFEFEF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="250dp"
+        android:layout_height="68dp"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/button_view"
+        android:fontFamily="monospace"
+        android:text="@string/create_page_add_new_subject"
+        android:textColor="#EFEFEF"
+        app:layout_constraintBottom_toTopOf="@+id/btnStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/mottoTxt"
+        android:layout_width="335dp"
+        android:layout_height="90dp"
+        android:layout_marginBottom="44dp"
+        android:text="@string/create_name_fpr_lotto"
+        android:textAlignment="center"
+        android:textColor="#D7D5D5"
+        android:textSize="24sp"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerSubject"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

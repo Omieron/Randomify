@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">OmerFarukAsil_HW1</string>
+    <string name="title_name">RANDOMIFY</string>
+    <string name="motto">Save the names and reveal the lucky one!</string>>
+    <string name="create_name_fpr_lotto">Choose a subject for SweepStake or create your own Subject</string>
+    <string name="enterance_btn">Lets Start</string>
+    <string name="cancel_btn">Cancel</string>
+    <string name="add_user">Add new applicant</string>
+    <string name="draw_lot">Draw the lot</string>
+    <string name="show_old_luckies">Lucky ones</string>
+    <string name="main_title_name">Applicant List</string>
+    <string name="main_user_btn">Edit</string>
+    <string name="user_edit_update_btn">Update</string>
+    <string name="user_edit_delete_btn">Delete</string>
+    <string name="create_page_add_new_subject">Add New Subject</string>
+    <string name="create_new_lotto">Create SweepStake</string>
+    <string name="add_subject">Add Subject</string>
+    <string name="back">Back</string>
+
+    <string name="applicant_create_card_string">Create Applicant</string>
+    <string name="applicant_edit_card_string">Edit Applicant</string>
+    <string name="can_btn_add">Add</string>
+    <string name="can_name">Name:</string>
+    <string name="can_mail">Email:</string>
+    <string name="can_phone">Phone:</string>
+    <string name="can_gender">Gender:</string>
+    <string name="can_age">Age:</string>
+
+    <string name="can_name_hint">John Doe</string>
+    <string name="can_mail_hint">example@example.com</string>
+    <string name="can_phone_hint">(555) 555 5555</string>
+    <string name="can_age_hint">12–99</string>
+    <string name="can_gender_woman">Woman</string>
+    <string name="can_gender_man">Man</string>
+</resources>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/material_dynamic_neutral_variant70">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="407dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="monospace"
+        android:text="@string/applicant_edit_card_string"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="406dp"
+        android:layout_height="300dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title">
+
+        <TableRow
+            android:layout_width="424dp"
+            android:layout_height="190dp">
+
+            <TextView
+                android:id="@+id/nameLbl"
+                android:layout_width="131dp"
+                android:layout_height="45dp"
+                android:fontFamily="monospace"
+                android:text="@string/can_name"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/nameTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:ems="10"
+                android:fontFamily="monospace"
+                android:hint="@string/can_name_hint"
+                android:inputType="text" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="142dp">
+
+            <TextView
+                android:id="@+id/mailLbl"
+                android:layout_width="121dp"
+                android:layout_height="51dp"
+                android:fontFamily="monospace"
+                android:text="@string/can_mail"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/mailTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:ems="10"
+                android:fontFamily="monospace"
+                android:hint="@string/can_mail_hint"
+                android:inputType="textEmailAddress" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="192dp">
+
+            <TextView
+                android:id="@+id/ageLbl"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:text="@string/can_age"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/ageTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:ems="10"
+                android:fontFamily="monospace"
+                android:hint="@string/can_age_hint"
+                android:inputType="date" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="192dp">
+
+            <TextView
+                android:id="@+id/phoneLbl"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:text="@string/can_phone"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/phoneTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:ems="10"
+                android:fontFamily="monospace"
+                android:hint="@string/can_phone_hint"
+                android:inputType="phone" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="142dp">
+
+            <TextView
+                android:id="@+id/genderLbl"
+                android:layout_width="121dp"
+                android:layout_height="match_parent"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:text="@string/can_gender"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:layout_width="281dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/womenBtn"
+                    android:layout_width="138dp"
+                    android:layout_height="60dp"
+                    android:fontFamily="monospace"
+                    android:checked="true"
+                    android:text="@string/can_gender_woman" />
+
+                <RadioButton
+                    android:id="@+id/manBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:fontFamily="monospace"
+                    android:text="@string/can_gender_man" />
+
+            </RadioGroup>
+
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/addBtn"
+        android:layout_width="219dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/button_view"
+        android:text="@string/user_edit_update_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+
+    <Button
+        android:id="@+id/deleteBtn"
+        android:layout_width="219dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_view"
+        android:text="@string/user_edit_delete_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addBtn" />
+
+    <Button
+        android:id="@+id/cancelBtn"
+        android:layout_width="219dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/button_view"
+        android:text="@string/cancel_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deleteBtn"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

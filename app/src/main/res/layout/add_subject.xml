@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color">
+
+    <!-- Title TextView -->
+
+    <!-- Subject Input EditText -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="340dp"
+        android:layout_height="109dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="55dp"
+        android:background="@drawable/title_view"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:text="@string/title_name"
+        android:textAlignment="center"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/createSubject"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/createSubject"
+        android:layout_width="321dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="69dp"
+        android:layout_marginEnd="69dp"
+        android:layout_marginBottom="38dp"
+        android:ems="10"
+        android:focusedSearchResultHighlightColor="#D7D5D5"
+        android:hint="@string/add_subject"
+        android:inputType="text"
+        android:outlineAmbientShadowColor="#E2E0E0"
+        android:outlineSpotShadowColor="#DEDDDD"
+        android:searchResultHighlightColor="#E0DFDF"
+        android:shadowColor="#D3CCCC"
+        android:textColor="#D0CBCB"
+        android:textColorHighlight="#E7E4E4"
+        android:textColorHint="#DBD8D8"
+        app:layout_constraintBottom_toTopOf="@+id/applyBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <!-- Apply Button -->
+    <Button
+        android:id="@+id/applyBtn"
+        android:layout_width="196dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/button_view"
+        android:text="@string/can_btn_add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createSubject" />
+</androidx.constraintlayout.widget.ConstraintLayout>
